@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    volumes:
+      - ./:/var/www/symfony
+      - ./docker/apache.conf:/etc/apache2/sites-enabled/000-default.conf:ro
+    ports:
+        - 8077:80
+    entrypoint: ["/usr/bin/development_entrypoint.sh"]
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8084:8025

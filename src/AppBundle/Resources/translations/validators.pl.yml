@@ -1,0 +1,7 @@
+app:
+  contact:
+    email:
+      notblank: Adres email jest wymagany
+      invalidate: Adres email jest niepoprawny
+    content:
+      notblank: Treść jest wymagana

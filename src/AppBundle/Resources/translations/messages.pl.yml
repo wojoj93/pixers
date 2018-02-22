@@ -1,0 +1,26 @@
+app:
+  email:
+    contact:
+      default_subject: Wiadomość kontaktowa
+      email: Adres email
+      title: Tytuł wiadomości
+      content: Treść
+      send: Wyślij
+      from_email: Od użytkownika
+  contact:
+    contact_us: Kontakt
+    send_message: Wyślij wiadomość
+    your_message: Twoja wiadomość
+    title: Tytuł
+    email: Email
+    placeholder:
+      title: Tytuł
+      email: wojciechisamek@gmail.com
+      description: Opis
+meta:
+  title:
+    page:
+      contact: Strona kontaktowa
+  description:
+    page:
+      contact: Opis strony kontaktowej

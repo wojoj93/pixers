@@ -1,0 +1,10 @@
+services:
+  app.mailer:
+      class: AppBundle\Mailer\Mailer
+      arguments: ["@translator", "@templating", "@router", "@mailer", '%mailer_sender_email%', '%mailer_name%']
+
+  app.listener.contact:
+      class: AppBundle\Event\Listener\ContactListener
+      arguments: ["@app.mailer"]
+      tags:
+          - { name: kernel.event_listener, event: user.contact.sent, method: onSendContact }
